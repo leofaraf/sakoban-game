@@ -3,9 +3,7 @@ package com.javarush.task.task34.task3410.model;
 import com.javarush.task.task34.task3410.controller.EventListener;
 
 import java.net.URISyntaxException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.logging.Level;
 
 public class Model {
     private EventListener eventListener;
@@ -41,5 +39,8 @@ public class Model {
 
     public void setEventListener(EventListener eventListener) {
         this.eventListener = eventListener;
+    }
+
+    public void move(Direction direction) {
     }
 }

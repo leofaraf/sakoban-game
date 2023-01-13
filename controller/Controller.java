@@ -1,6 +1,7 @@
 package com.javarush.task.task34.task3410.controller;
 
 import com.javarush.task.task34.task3410.model.Direction;
+import com.javarush.task.task34.task3410.model.GameObjects;
 import com.javarush.task.task34.task3410.model.Model;
 import com.javarush.task.task34.task3410.view.View;
 
@@ -10,7 +11,12 @@ public class Controller implements EventListener {
     public Controller() {
         view = new View(this);
         model = new Model();
+        model.restart();
         view.init();
+    }
+
+    public GameObjects getGameObjects() {
+        return model.getGameObjects();
     }
 
     @Override
